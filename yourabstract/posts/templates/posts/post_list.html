@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Govno</title>
+    </head>
+    <body>
+        {% for post in posts %}
+            <h1>{{ post.title }}</h1>
+            <i>{{ post.publish }}</i>
+            <p>{{ post.content|safe }}</p>
+            <b>{{ post.author }}</b>
+        {% endfor %}
+    </body>
+</html>
